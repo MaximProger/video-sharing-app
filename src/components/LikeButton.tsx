@@ -37,7 +37,7 @@ const LikeButton = ({
         {alreadyLiked ? (
           <button
             type="button"
-            className="bg-primary rounded-full p-2 md:p-4 text-pink outline-none"
+            className="bg-primary rounded-full p-2 md:p-4 text-accentPrimary outline-none"
             onClick={handleDislike}
           >
             <MdFavorite className="text-lg md:text-2xl" />

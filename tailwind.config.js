@@ -29,7 +29,8 @@ module.exports = {
       },
       colors: {
         primary: "rgb(22, 24, 35)",
-        pink: "#F51997",
+        accentPrimary: "#F51997",
+        accentSecondary: "#F8F8F8",
       },
       height: {
         "88vh": "88vh",
