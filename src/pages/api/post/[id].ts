@@ -14,6 +14,8 @@ if (req.method === 'GET') {
   res.status(200).json(data[0])
 } else if (req.method === 'PUT') {
   const {comment, userId} = req.body
+  console.log(comment);
+  
   const {id}:any = req.query
 
   const data = await client.patch(id).setIfMissing({comments: []}).insert('after', 'comments[-1]', [{
