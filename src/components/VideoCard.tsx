@@ -38,13 +38,14 @@ const VideoCard = ({ post }: IProps) => {
     <div className="flex flex-col border-b-2 border-gray-200 pb-6">
       <div>
         <div className="flex gap-3 p-2 cursor-pointer font-semibold rounded">
-          <div className="md:w-16 md:h-16 w-10 h-10">
-            <Link href={`/profile/${post.postedBy._id}`}>
+          <div>
+            <Link href={`/profile/${post.postedBy._id}`} className="block">
               <>
                 <Image
                   width={62}
                   height={62}
-                  className="rounded-full w-[62px] h-[62px] object-cover"
+                  className="rounded-full xl:min-w-[62px] xl:w-[62px] xl:h-[62px]
+                  min-w-[40px] w-[40px] h-[40px] object-cover"
                   src={post.postedBy.image}
                   alt={post.postedBy.userName}
                 />
