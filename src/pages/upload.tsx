@@ -84,16 +84,14 @@ const Upload = () => {
             {isLoading ? (
               <p>Uploading...</p>
             ) : (
-              <div>
+              <>
                 {videoAsset ? (
-                  <div>
-                    <video
-                      src={videoAsset.url}
-                      loop
-                      controls
-                      className="rounded-xl h-[450px] mt-16 bg-black"
-                    ></video>
-                  </div>
+                  <video
+                    src={videoAsset.url}
+                    loop
+                    controls
+                    className="rounded-xl h-[450px] bg-black"
+                  ></video>
                 ) : (
                   <label className="cursor-pointer" htmlFor="upload_video">
                     <div className="flex flex-col items-center justify-center h-full">
@@ -122,7 +120,7 @@ const Upload = () => {
                     />
                   </label>
                 )}
-              </div>
+              </>
             )}
             {wrongFileType && (
               <p className="text-center text-xl text-red-400 font-semibold mt-4 w-[250px]">
