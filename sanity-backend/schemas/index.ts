@@ -2,7 +2,7 @@ import post from "./post";
 import user from "./user";
 import comment from "./comment";
 import postedBy from "./postedBy";
-import {defineConfig} from 'sanity'
+import {defineConfig} from 'sanity/lib/exports'
 
 export const schemaTypes = [
   post, user, comment, postedBy
