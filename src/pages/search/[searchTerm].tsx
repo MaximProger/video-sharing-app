@@ -74,7 +74,10 @@ const Search = ({ videos }: IProps) => {
                 </Link>
               ))
             ) : (
-              <NoResults text={`No account results for ${searchTerm}`} />
+              <NoResults
+                text={`No account results for ${searchTerm}`}
+                type="account"
+              />
             )}
           </div>
         ) : (

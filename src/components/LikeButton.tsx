@@ -31,7 +31,7 @@ const LikeButton = ({
   return (
     <div className="flex gap-6">
       <div
-        className="mt-4 flex flex-col justify-center items-center
+        className="flex flex-col justify-center items-center
  cursor-pointer"
       >
         {alreadyLiked ? (

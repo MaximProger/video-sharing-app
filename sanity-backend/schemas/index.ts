@@ -8,8 +8,10 @@ export const schemaTypes = [
   post, user, comment, postedBy
 ]
 
-export default defineConfig({
+const config = {
   schema: {
     types: schemaTypes
   }
-})
+}
+
+export default defineConfig(config as any)

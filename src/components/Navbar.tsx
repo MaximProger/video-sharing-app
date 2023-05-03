@@ -71,7 +71,7 @@ const Navbar = () => {
               </button>
             </Link>
             {userProfile.image && (
-              <Link href="/">
+              <Link href={`/profile/${userProfile._id}`}>
                 <>
                   <Image
                     width={40}
@@ -85,7 +85,7 @@ const Navbar = () => {
             )}
             <button
               type="button"
-              className="px-2"
+              className="p-2 shadow-md rounded-full flex items-center justify-center"
               onClick={() => {
                 googleLogout();
                 removeUser();

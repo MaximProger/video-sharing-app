@@ -73,7 +73,7 @@ const Comments = ({
             </div>
           ))
         ) : (
-          <NoResults text="No comments yet" />
+          <NoResults text="No comments yet" type="comment" />
         )}
       </div>
       {userProfile && (
