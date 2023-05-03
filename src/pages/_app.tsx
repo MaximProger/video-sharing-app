@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import Navbar from "@/components/Navbar";
-
 import Sidebar from "@/components/Sidebar";
 
 export default function App({ Component, pageProps }: AppProps) {
